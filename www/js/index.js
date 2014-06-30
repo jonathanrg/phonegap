@@ -16,6 +16,12 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
+$("#button").click( function()
+{
+    alert('button clicked');
+});
+
 var app = {
     // Application Constructor
     initialize: function() {
@@ -47,3 +53,5 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+
+
