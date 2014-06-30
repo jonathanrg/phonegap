@@ -1,6 +1,0 @@
-<<<<<<< HEAD
-cambios varios
-=======
-cambios 
-que no me gustan
->>>>>>> nuevaRama
