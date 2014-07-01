@@ -34,12 +34,20 @@
     </head>
 
     <body>
+        <div data-role="header" data-position="fixed">
+                <h1>Peke's Project</h1>
+        </div>
+        
+        <section id="homepage-hero">
+            <img src="img/logo.png" alt="Build Bot Prime"><br>
+        </section>
+
         <div class="app">
             <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                 <div id="button" data-role="button">Abrir PDF</div>
-            </div>
+            <div id="deviceready" class="blink"></div>
+            <div id="button" data-role="button">Abrir PDF</div>
         </div>
+
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();

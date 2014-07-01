@@ -17,10 +17,16 @@
  * under the License.
  */
 
-$("#button").click( function()
+/*$("#button").click( function()
 {
     alert('button clicked');
-});
+});*/
+
+function openPDF() {
+    alert('button clicked');
+    window.open("../lugares.pdf", "", "toolbar=0");
+}
+$("#button").bind("click", openPDF);
 
 var app = {
     // Application Constructor

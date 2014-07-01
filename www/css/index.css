@@ -45,9 +45,16 @@ body {
     width:100%;
 }
 
+@-webkit-keyframes animate-bot{from{margin-top:0}50%{margin-top:-10px}to{margin-top:0}}
+#homepage-hero img {
+    position:absolute;             /* position in the center of the screen */
+    left:28%;
+    top:30%;
+    -webkit-animation: animate-bot 3s ease-in-out infinite;
+}
 /* Portrait layout (default) */
 .app {
-    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
+    /*background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
     position:absolute;             /* position in the center of the screen */
     left:50%;
     top:50%;
