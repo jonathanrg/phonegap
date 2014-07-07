@@ -1,11 +1,7 @@
+<!DOCTYPE html>
+
 <html>
 <head>
-    <!-- <script type="text/javascript" src="js/pdfobject.js"></script>
-     <script type="text/javascript">
-      window.onload = function (){
-        var success = new PDFObject({ url: "lugares.pdf" }).embed("pdf");
-      };
-    </script> -->
 </head>
     
 <body>
@@ -19,10 +15,11 @@
 
     <div data-role="content">
         <div id="repoDetails">
-            <!-- <a class="media" href="lugares.pdf"></a> 
-            <embed src="lugares.spdf" width="360" height="500" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html"> 
-            <div id="pdf">It appears you don't have Adobe Reader or PDF support in this web browser. <a href="lugares.pdf">Click here to download the PDF</a></div> -->
-            <embed src="lugares.pdf" width="360" height="500" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
+            <object id="myPdf" width="360" height="500" type="application/pdf" data="lugares.pdf">
+            Unable to open the PDF file.
+            </object>
+
+            <!-- <iframe src="lugares.pdf" style="width:360px; height:500px;" frameborder="0"></iframe> -->
         </div>
     </div>
     
