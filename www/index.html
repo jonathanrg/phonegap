@@ -26,10 +26,21 @@
 
             <div class="app">
                 <h1>App de PEKE's</h1>
-                <a href="pdfdetail.html" data-role="button">Abrir PDF</a> 
+                <a href="pdfdetail.html" data-role="button">Abrir PDF</a>
+                <a href="#" data-role="button" onclick="openPDF()">Abrir PDF 2</a>
             </div>
         </div>
 
         <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>
+
+<script type="text/javascript">
+function openPDF() {
+     var ref = window.open('lugares.pdf', '_self', 'location=yes');
+     ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
+     ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
+     ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
+     ref.addEventListener('exit', function(event) { alert(event.type); });
+}
+</script>
